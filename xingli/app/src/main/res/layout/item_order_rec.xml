@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:contentPadding="10dp"
+        android:paddingStart="5dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/orderlist_post_image"
+            android:layout_width="120dp"
+            android:layout_height="130dp"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/orderlist_type"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="驿站订单"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_below="@+id/orderlist_type"
+                android:id="@+id/orderlist_mian_name"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="中北大学asdasdsadadasdsad"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/orderlist_end_post_name"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderlist_mian_name"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="中北大学"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/orderlist_getTime"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderlist_mian_name"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="中北大学"
+                android:textColor="@color/black"
+ />
+
+            <TextView
+                android:id="@+id/orderlist_getLoc"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/orderlist_getTime"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:singleLine="true"
+                android:text="中北大学"
+                android:textColor="@color/black"
+/>
+
+            <TextView
+                android:id="@+id/orderlist_order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/orderlist_create_time"
+                android:layout_marginBottom="0dp"
+                android:text="支付金额：208元"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:id="@+id/orderlist_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="2021-10-15 17:47" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="已支付"
+                android:id="@+id/orderlist_pay_state"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#FFFF00"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="已接单"
+                android:layout_below="@+id/orderlist_pay_state"
+                android:id="@+id/orderlist_accept_state"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="#FFFF00"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_below="@+id/orderlist_accept_state"
+                android:text="已完成"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#FFFF00"
+                android:textStyle="bold"
+                android:id="@+id/orderlist_finish_state"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/orderlist_finish_state">
+                <TextView
+                    android:id="@+id/Message"
+                    android:text="123456"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:background="#FFFF00"/>
+
+                <Button
+                    android:id="@+id/see_Message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="查看凭证" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,184 @@
+package com.example.xingli.Activity;
+
+import android.app.AlertDialog;
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.xingli.R;
+
+import java.util.List;
+
+import base.BaseActivity1;
+import cn.bmob.v3.Bmob;
+import cn.bmob.v3.BmobQuery;
+import cn.bmob.v3.BmobUser;
+import cn.bmob.v3.exception.BmobException;
+import cn.bmob.v3.listener.FindListener;
+import cn.bmob.v3.listener.SaveListener;
+import db.User;
+
+public class LoginActivity extends BaseActivity1 {
+
+    private SharedPreferences pref;
+    private SharedPreferences.Editor editor;
+
+    private Button login;
+    private Button register;
+    private TextView forget;
+    private EditText accountEdit;
+    private EditText passwordEdit;
+    private CheckBox rememberPass;
+
+    private String s_account;
+    private String s_passWord;
+
+    DialogInterface.OnClickListener listener2 = new DialogInterface.OnClickListener()
+    {
+        public void onClick(DialogInterface dialog, int which)
+        {
+            switch (which)
+            {
+                case AlertDialog.BUTTON_POSITIVE:// "确认"按钮退出程序
+                    Intent intent = new Intent(LoginActivity.this, UserForgetByTelActivity.class);
+                    startActivity(intent);
+                    break;
+                case AlertDialog.BUTTON_NEGATIVE:// "取消"第二个按钮取消对话框
+                    Intent intent1 = new Intent(LoginActivity.this, UserForgetByEmailActivity.class);
+                    startActivity(intent1);
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+        Bmob.initialize(this, "f34bb86178bb7aba446a1c3df046e24d");
+
+        pref = PreferenceManager.getDefaultSharedPreferences(this);
+
+        accountEdit = (EditText) findViewById(R.id.account);
+        passwordEdit = (EditText) findViewById(R.id.password);
+        rememberPass = (CheckBox) findViewById(R.id.remember_pass);
+
+        boolean isRemember = pref.getBoolean("remember_password", false);
+        if (isRemember) {
+            String account = pref.getString("account", "");
+            String password = pref.getString("password", "");
+            accountEdit.setText(account);
+            passwordEdit.setText(password);
+            rememberPass.setChecked(true);
+        }
+
+        //login按钮
+        login = (Button) findViewById(R.id.login);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                s_account = accountEdit.getText().toString();
+                s_passWord = passwordEdit.getText().toString();
+
+
+
+                if (s_account.isEmpty() || s_passWord.isEmpty()) {
+                    Toast.makeText(LoginActivity.this, "请先输入账号/密码", Toast.LENGTH_SHORT).show();
+
+                } else {
+
+                    ProgressDialog progressDialog=new ProgressDialog(LoginActivity.this);
+                    progressDialog.setTitle("正在登录");
+                    progressDialog.setTitle("Loading...");
+                    progressDialog.setCancelable(false);
+                    progressDialog.show();
+
+                    BmobQuery<User> userBmobQuery = new BmobQuery<>();
+                    userBmobQuery.addWhereEqualTo("username", s_account);
+                    userBmobQuery.findObjects(new FindListener<User>() {
+                        @Override
+                        public void done(List<User> list, BmobException e) {
+                            if (list.size() != 0) {
+                                final User user = new User();
+                                //此处替换为你的用户名
+                                user.setUsername(s_account);
+                                //此处替换为你的密码
+                                user.setPassword(s_passWord);
+
+
+
+                                user.login(new SaveListener<User>() {
+                                    @Override
+                                    public void done(User bmobUser, BmobException e) {
+                                        if (e == null) {
+                                            //账号密码正确，复选框操作
+                                            editor = pref.edit();
+                                            if (rememberPass.isChecked()) {
+                                                editor.putBoolean("remember_password", true);
+                                                editor.putString("account", s_account);
+                                                editor.putString("password", s_passWord);
+                                            } else {
+                                                editor.clear();
+                                            }
+                                            editor.apply();
+                                            //登录操作
+                                            progressDialog.dismiss();
+                                            User user = BmobUser.getCurrentUser(User.class);
+                                            Intent intent=new Intent(LoginActivity.this,MainActivity.class);
+                                            startActivity(intent);
+                                        } else {
+                                            Toast.makeText(LoginActivity.this, "登录失败：" + e.getMessage(), Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                });
+                            } else {
+                                Toast.makeText(LoginActivity.this, "用户不存在，请先注册", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    });
+                }
+            }
+        });
+
+        //register按钮
+        register = (Button) findViewById(R.id.register);
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, UserRegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //forget按钮
+        forget = (TextView) findViewById(R.id.forget);
+        forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                AlertDialog isExit = new AlertDialog.Builder(LoginActivity.this).create();
+
+                isExit.setTitle("系统提示");
+// 设置对话框消息
+                isExit.setMessage("请您选择找回密码的方式");
+// 添加选择按钮并注册监听
+                isExit.setButton("手机号验证", listener2);
+                isExit.setButton2("电子邮箱验证", listener2);
+// 显示对话框
+                isExit.show();
+            }
+        });
+
+    }
+}

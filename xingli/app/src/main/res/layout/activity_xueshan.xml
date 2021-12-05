@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.xueshanActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/xueshan_banner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="在离雪山最近的地方感受- -日美好|宛 如仙境"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="这可能是我今年这么多次川西旅行
+发现最让我吃惊的一个地方了!!!\n
+美好到感觉自己恍惚闯入仙境\n
+坐在小溪流边\n
+看着清澈的流水\n
+近在咫尺的雪山\n
+蓝天白云下享受这一刻旅行中的最美好。\n
+大家川西旅行最不应该错过的一个地方
+就是这\n
+这个地方也是今年才开发出来的，之前没有公路进
+去，所以景区人非常非常少，我感觉整个景区就我们
+一样，畅游整个风景。\n
+名字: 亚拉雪山景区\n
+门票: 60/人，观光车90/人\n
+时间:下午2:30就停止售 票了\n
+特别喜欢亚拉雪山这边，因为在塔公看到的是另外一
+面，雪比较少，而亚拉雪山这边山上的积雪非常多，
+-年四季都可以看到雪山。\n
+[游玩方式]
+景区大门海拔3000m
+雪山脚下海拔4000m\n
+从景区大门坐观光车一路上都非常的美!彩虹路巨
+美!大概14公里到游客中心，到山顶只能徒步或者骑
+马，大概两公里的样子，看大家身体状况。
+拍照一定要在5点以前，露营建议拍日落金山。\n
+[露营情况 ]
+景区是可以露营的，统一在游客中心停车场。
+景区里有工作人员值班，所以安全问题很好，厕所里
+有热水和暖气片，也有房车的充电桩。
+如果需要露营是要和景区登记，然后带上行李装备坐
+区间车进去，然后到指定露营点，可以看到整个亚拉
+雪山。日落金山非常美。\n
+[拍摄点推荐]\n
+1.景区大门口的彩虹公里和雪山\n
+2.景区公路.上的所有地方都非常好看\n
+3.坐观光车到桥边\n
+4.游客中心停车场往前2km，很大一块草坪和小溪流巨
+美!\n
+5.姊妹湖，彩林非常好看!\n
+[露营装备 ]\n
+每次川西旅行都是带很多很多露营装备，也不知道为
+啥越来越喜欢大自然，享受在大自然露营的感觉。\n
+帐篷天幕:旗速hispeed\n
+特别喜欢这款天幕，很好搭，拍照也很好看，而且很
+防水，因为这次在新都桥遇到冰雹，打在天幕上都完
+全不怕。\n
+[川西3天2晚线路推荐]\n
+day1:成都-康定省道434-红海子-斯丁错塔公\n
+day2:塔公草原-墨石公园-亚拉雪山-姑弄村-塔公\n
+day3:塔公-新都桥-折多山-成都\n
+[住宿推荐 ]\n
+康定:希誉酒店\n
+塔公:肆野露营地、曼达拉\n
+新都桥：贡嘎宗"/>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

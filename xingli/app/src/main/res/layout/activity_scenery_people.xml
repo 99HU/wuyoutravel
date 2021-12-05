@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.sceneryPeopleActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#B3B3B3">
+            <ImageView
+                android:id="@+id/tishi"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/tishi"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tishi"
+                android:text="以下数据以景区现场发布为准"
+                android:layout_marginRight="1dp"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:layout_toLeftOf="@+id/ss"
+                android:background="@color/green" />
+
+            <TextView
+                android:id="@+id/ss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="舒适"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/blue"
+                android:layout_marginRight="1dp"
+                />
+
+            <ImageView
+                android:id="@+id/blue"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:layout_toLeftOf="@+id/jss"
+                android:background="@color/blue" />
+
+            <TextView
+                android:id="@+id/jss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="较舒适"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/orange"
+                android:layout_marginRight="1dp"
+                />
+
+            <ImageView
+                android:id="@+id/orange"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:layout_toLeftOf="@+id/yb"
+                android:background="@color/orange" />
+
+            <TextView
+                android:id="@+id/yb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/red"
+                android:layout_marginRight="1dp"
+
+                android:text="一般" />
+
+            <ImageView
+                android:id="@+id/red"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:layout_toLeftOf="@+id/yj"
+                android:background="@color/red" />
+                
+            <TextView
+                android:id="@+id/yj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="拥挤"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/city_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="西安"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/city_name">
+
+
+                        <ImageView
+                        android:id="@+id/qizi"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                            android:background="@drawable/qizi"
+                            android:layout_marginLeft="20dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/qizi"
+                            android:text="相关景点"
+                            android:textColor="#1296db"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="300dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_toRightOf="@+id/t1"
+                            android:background="#1296db" />
+                        <LinearLayout
+                            android:id="@+id/main_scenery"
+                            android:layout_below="@+id/qizi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:text="09:00-21:30"
+                                    android:id="@+id/main_scenery_time1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"/>
+                                <TextView
+                                    android:id="@+id/main_scnery_name1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_gravity="center_vertical"
+                                    android:textColor="@color/black"
+                                    android:textSize="18sp"
+                                    android:text="迪士尼乐园"/>
+                            </LinearLayout>
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="3dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@color/green"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:text="09:00-21:30"
+                                        android:id="@+id/main_scenery_time2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_gravity="center_vertical"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/main_scnery_name2"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        android:text="迪士尼乐园"/>
+                                </LinearLayout>
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="3dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@color/green"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:text="09:00-21:30"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/main_scenery_time3"
+                                        android:layout_gravity="center_vertical"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/main_scnery_name3"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        android:text="迪士尼乐园"/>
+                                </LinearLayout>
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="3dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@color/green"/>
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+                                        android:text="09:00-21:30"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:id="@+id/main_scenery_time4"
+                                        android:layout_gravity="center_vertical"/>
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_gravity="center_vertical"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        android:id="@+id/main_scnery_name4"
+                                        android:text="迪士尼乐园"/>
+                                </LinearLayout>
+                                <ImageView
+                                    android:layout_width="70dp"
+                                    android:layout_height="3dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@color/green"/>
+                            </RelativeLayout>
+                        </LinearLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@color/black" />
+                        <RelativeLayout
+                            android:id="@+id/update_time_bigtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/main_scenery">
+
+                            <TextView
+                                android:id="@+id/now_num"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toLeftOf="@+id/fill_num"
+                                android:text="19885"
+                                android:textSize="22sp" />
+
+                        <TextView
+                            android:id="@+id/fill_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="18sp"
+                            android:text="人 / 140650 人" />
+                        </RelativeLayout>
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/update_time_bigtitle"
+                            android:background="#1296db" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/t2"
+                            android:layout_marginTop="3dp">
+
+                            <TextView
+                                android:id="@+id/update_time_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="数据更新时间"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:id="@+id/main_scenery_update_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/update_time_title"
+                                android:text=" 2021-11-07 15:14:00"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:text="当时客流/瞬时最大承载量"
+                                android:textSize="12sp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/scenery_num_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

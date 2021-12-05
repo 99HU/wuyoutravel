@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.xingli">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="base.UniteApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/lvxing"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Xingli"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Activity.sceneryPeopleActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.xueshanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.xishuangActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.hangzhouActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.qingdaoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.changshaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UpdateGuideOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.GuideOrderDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.createGuideOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.GuideDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UpdatePhotographerOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PhotographerOrderDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.createPhotographerOrderActivtity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.photographerDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.photographerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.upDateActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.orderDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.GuideActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.ShotActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.chooseStartPostActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.createOrderSuccess"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.NoticeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.createOrderActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.postDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.MapActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.PakegeActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="xR2wTmVYaGdfoViEFpf9BcHUTpYggdja" />
+
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true" />
+        <activity android:name="juhe.WebViewActivity" />
+        <activity android:name="juhe.MainActivity" />
+        <activity android:name="city_manager.CityManagerActivity" />
+        <activity android:name="city_manager.SearchCityActivity" />
+        <activity android:name="city_manager.DeleteCityActivity" />
+        <activity android:name="juhe.MoreActivity" />
+        <activity android:name=".Activity.MonthChartActivity" />
+        <activity android:name=".Activity.SettingActivity" />
+        <activity android:name=".Activity.HistoryActivity" />
+        <activity android:name=".Activity.AboutActivity" />
+        <activity android:name=".Activity.SearchActivity" />
+        <activity android:name=".Activity.RecordActivity" />
+        <activity android:name=".Activity.BudgetActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".Activity.UserForgetByTelActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UserForgetByEmailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UserForgetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.UserRegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.xingli.BmobContentProvider" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.xingli.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

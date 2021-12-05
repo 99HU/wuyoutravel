@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.qingdaoActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/qingdao_banner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="青岛学生党三天两夜超全旅游攻略由"/>
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+坐标合肥，大二党，喜欢旅行，这篇攻略适合时间不
+多喜欢旅行的朋友们。世界这么大我想去看看! 总花销: 1300左右 来回才: 630 (因为我是冬天
+淡季去的，机票非常便宜)住宿金: 250吃喝:
+200滴滴打车e: 200\n
+住宿问题:第一晚住的r960青年旅舍t49RMB,
+因为没有住过青旅，特别想尝试一下住青旅，会不会
+碰到什么志同道合喜欢旅游的朋友，事实上是我想多
+了，住青旅要自己铺床，当时这家青旅老板也不是特
+别热情，没有很多特别的体验，洗澡也不太方便，好
+在离五四广场奥帆中心很近，但是也不是特别推荐。
+第二晚住的I 迟客民宿200RMB (旺季500+) 强烈
+推荐!! !! 不管是环境还是交通问题，体验感非常好,
+民宿对面就是大海，旁边也有很多旅游景点，老板娘
+人好，( 我的笔记中有详细介绍这家民宿，我就不细
+说啦!)。均在携程上预订\n
+●大致路线规划:圣弥厄尔大教堂一Cy青岛书房
+-7y解忧杂货店一(栈桥一一 y天后宫一 -德国 .
+监狱-
+。大学路
+Cy老舍故居一名 八大关-
+(y海水浴场一一Ty公主楼一一二 信号山公园- -一二嘉
+木美术馆,晚上可以去的地方:无非馄饨，五四广场，奥帆中.
+心，台东步行街，可以自行选择!\n
+圣弥厄尔大教堂算是比较标志性的一-个建筑物了
+吧，第一站在此拍照打卡。
+青岛书房和解忧杂货店企 就在教堂对面，当时去两
+个都没有开门，所以并没有进去，拍照完就离开啦!
+栈桥是步行去的，打开高德地图，走几分钟就到
+了，栈桥有很多老奶奶卖一小袋馒头饼干喂海鸥的零
+食，4块钱一袋很便宜，真的很多海鸥，敲可爱!
+栈桥呆比较久，海风真的超大，我是冬天去冷的瑟瑟
+发抖。
+\n天后宫在步行去德国监狱的路上，我并没有进去,
+感兴趣的小伙伴可以进去看看。
+德国监狱听着名字很可怕，其实并不是真的监狱,
+是一座集古堡式监狱建筑群、司法大队建筑为一体的
+特色博物馆，是全国现存最早的殖民监狱旧址之一，
+门票回25元，学生证可以便宜。
+\n大学路是打车去的，有很多文艺小店，很适合女孩
+子拍照，封面的好像是鹿晗mv取景地，鹿晗的粉丝可
+以去拍照打卡!
+\n老舍故居介绍了很多老舍的作品文化及介绍，旁边
+有一个荒野书房，不用门票，喜欢老舍的可以去看一
+看。
+\n八大关算是去青岛必去的一个景点了吧，一年四季
+的八大关都有自己的特色，拿起你的，在这里拍照
+吧，八大关里有一个公主楼圈很好看，门票15元，学
+生证5折，还有一个花石楼，但是我没有找到，所以没
+有去，这里的很多房子全都超级有特色，八大关里还
+有一个海水浴场，用手机拍不出当时的美!夏天去旅
+游的一定一定要去啊!
+\n信号山公园强 烈推荐去，门票12元，学生证五折,
+12元的票包括上观景台，图上放的大红色的圆球一样
+的东西就是旋转观景台，可以俯瞰青岛，各种红屋顶
+以及大海的波光粼粼，时间充足的话，可以在这里呆
+一下午，反正我当时挺舍不得走的，嘻嘻。
+\n嘉木美术馆当时是 下信号山步行去的，不需要门
+票，下午六点半闭馆，大概走了20多分钟到达，我是
+一个非常讨厌走路的人，但是一-路上看到各种各样德
+式建筑的老房子，也忘了走路的疲惫。
+台东步行街，当时也在小红书上看攻略，大部分人推荐去台东步行街，不推荐劈柴院，说台东步行街
+美食很多，但是可能期望值太高，台东步行街也并没
+有想象中好吃的有很多，是在步行街里面的一-条很普
+通的一条街，不过有一家叫来自明洞的店年糕挺好吃
+的! ( 纯属个人看法，不喜勿喷)\n
+五四广场、崂山(当地人比较推荐)、奥帆中心、
+情人坝、青岛啤酒博物馆、青岛海洋世界，这些我都
+没有去或者没有详细写，大家感兴趣有时间的都可以
+去看一看。\n
+”喜欢的两家特色店( ”无非馄饨和vanilla cafe两
+家非常适合拍照有特色的店，我的其他笔记有详细介
+绍这两家店的内容及具体地址!
+总结9青岛让我印象最深的应该就是他有特色的建筑
+及它的慢生活节奏吧。如果你喜欢旅游，那么不妨来
+青岛看海吃海鲜吧，一定不会让你失望。
+"/>
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

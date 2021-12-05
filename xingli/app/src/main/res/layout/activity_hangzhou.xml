@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.hangzhouActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/hangzhou_banner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="杭州桂花季|灵隐寺满觉陇1日攻略(附地图"/>
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="
+这个路线不走回头路，一路下山走起来很轻松，却可以省时间高效地游览到最小众最美的景色哦!
+!都能导航到，汤屋的地图见图9,我自己找了半个小时才找到，大家按照地图就不用走冤枉路咯!
+除了景色，咖啡午餐晚餐都融合在路线里，并且都是我精心挑选并吃过的，人均不过百，好吃又特色!
+下面正式开始咯\n
+第1站: 11点(年轻人都起不了早呀我懂从一杯“山舍”的“桂花拿铁”\n
+第2站:大概步行10-15分钟顺沿山路往下走，感受满觉陇的当地惬意生活\n
+第3站:中午12点30一碗“桂语家面”的泉水牛肉面，一口香气扑鼻的桂花乌龙\n
+第4站:中午14点千里千寻真实版汤屋打卡，真的是很特别的一-座建筑\n
+第5站:下午15点-17点打车前往灵隐寺，用心感受灵隐寺的环境、建筑\n
+第6站:下午17点30穿过灵隐寺的石板小街，吃一碗素食餐厅知竹的拌面
+和素饺，在寺庙旁吃素食，再适合不过了!
+"/>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

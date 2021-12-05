@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.changshaActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="长沙旅游|人均1000四天三晚的长沙攻略日长沙，适合打卡一次又一次的城市"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="住宿:五一广场的附近的民宿最推荐了，出行方便，我住在一家ins风的民宿，可以在携程1美团上预约“BOBO国际”，民宿里设施设备齐全都不错。最重要是楼下几百米就是坡子街，晚上宵夜吃喝都很方便，真的是爱了!"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="交通:下载“长沙地铁”APP，景点之间都不远，出行坐地铁很方便。"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="行程:\n
+Day1:抵达长沙●民宿放下行李坡子街黄兴步行街\n
+Day2:橘子洲头●岳麓山五一广场ifs国金中心\n
+Day3:谢子龙影像艺术馆●李自健美术馆●打卡超级文和友\n
+Day4:嗦粉一条街●万家丽顶楼三顿半茶颜悦色●收拾行李返程\n
+景点:\n
+①fs国金中心: kaws在七楼，找个时间路过上去拍照就好#IFS国金中心\n
+②五一广场|坡子街|黄兴步行街:这三个地方离得很近，适合晚上去吃吃喝喝#坡子街#五一广场#黄兴路步行街\n
+③超级文和友:在海信广场，最好选择不是饭点的时候去，装修很复古，不吃饭进去拍拍照也行#超级文和友(海信广场店)\n
+拍完照可以去黄兴广场旁的蟹主隆恩·虾蟹馆，去吃本地人爱吃的小龙虾蟹。#蟹主隆恩\n
+④橘子洲头:门票，建议进门就坐来往返的小火车，往返20（学生10)，中途可以任意上下车五次，终点站是毛爷爷石像。注意!!千万别步行，里面非常大，距离毛爷爷石像起码得步行2小时，真的会精疲力尽，我就是步行进去，观光车出来!!而且你仅仅返回的车票也是20所以推荐进门就坐往返车～#橘子洲\n
+⑤谢子龙影像艺术馆:一楼门票r，二楼需要收，要提前预约，大门口拍照就非常出片，还有网红保安大哥热心给你拍照留念，建议穿黑白色系的衣服，可以带把黑白色的雨伞分分钟拍出大片#谢子龙影像艺术馆\n
+补⑥李自健美术馆:门票，进门就是栩栩如生的画，很值得一去#李自健美术馆\n
+岳麓山:门票，建议索道上山，滑道下山，来了一定要玩滑道!在东门进才有滑道和索道，索道30，滑道35。注意!!周一～周四只有观光车，索道仅限周五周六周日哦～\n
+⑧嗦粉一条街|网红墙长沙打卡地:地地道道的米粉一条街，进牌坊左边就有这面长沙两字的网红打卡地#嗦粉街\n
+⑨万家丽广场:建议在下午五点左右去，刚好赶上日落，坐酒店电梯上28楼#万家丽广场\n
+基本上所有的吃喝玩乐都在五一广场附近，建议大家都可以选择住在五一广场附近哦～到了一定先来一杯茶颜悦色，首选也幽兰拿铁哟～注意!!关【茶颜悦色】号，把生日注册成到达长沙当天的日期，即可得到一张赠饮，一周内使用都可以\n
+希望大家都玩得开心"/>
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

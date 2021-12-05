@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/activity_main.xml" value="0.1793478260869565" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/activity_post_forget_by_email.xml" value="0.24230072463768115" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/activity_post_forget_by_tel.xml" value="0.24230072463768115" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/activity_post_forget_password.xml" value="0.24230072463768115" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/activity_post_home_page.xml" value="0.1296875" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/activity_post_person_info.xml" value="0.23777173913043478" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/activity_post_register.xml" value="0.24230072463768115" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/activity_post_station_info.xml" value="0.213768115942029" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/change_headimage_bottom_dialog.xml" value="0.23324275362318841" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/layout/item_post_order.xml" value="0.4" />
+        <entry key="..\:/Android_studio_SDK/PostStation/app/src/main/res/menu/mine_info.xml" value="0.25364583333333335" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/activity_main.xml" value="0.1504269211451532" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/activity_order_detail.xml" value="0.22" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/activity_post_forget_by_email.xml" value="0.1504269211451532" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/activity_post_forget_by_tel.xml" value="0.1504269211451532" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/activity_post_forget_password.xml" value="0.1504269211451532" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/activity_post_home_page.xml" value="0.1504269211451532" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/activity_post_person_info.xml" value="0.16666666666666666" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/activity_post_register.xml" value="0.22" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/activity_post_station_info.xml" value="0.28789323164918973" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/change_headimage_bottom_dialog.xml" value="0.22" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/layout/item_post_order.xml" value="0.3333333333333333" />
+        <entry key="..\:/Post/PostStation/app/src/main/res/menu/mine_info.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

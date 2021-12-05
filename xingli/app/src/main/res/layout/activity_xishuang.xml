@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.xishuangActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.youth.banner.Banner
+            android:id="@+id/xishuang_banner"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:text="意外发现!比西双版纳曼听公园还美的取景地，人
+少!"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:layout_height="wrap_content"
+            android:text="盛国庆假期过去了，意犹未尽的旅行回忆还在继续...
+米在西双版纳发现了- -个意外惊喜的取景地，没有
+拥挤的人群，景色比曼听公园还异域风情，非常出片
+。\n
+米环境整体设计是泰式的风格三，还有一条河贯穿过
+去，把建筑的倒影映照下来，特别有泰国古装剧穿越
+戏的氛围的。\n
+地点名称:傣乡水城\n
+P地址:勐腊路34号，广电路路口(玛扎烧烤斜对
+面)\n
+门票: 免费\n
+开放时间:全天开放\n
+游玩时间:随意，建议一小时，如果喜欢精细拍
+摄，时间不限时。\n
+交通(以告庄西双景为出发点)
+。
+\n自驾: 5公里左右，自驾15分钟，建筑明显别具一
+格，按照地图导航走非常容易找到包\n
+出租车: 15分钟，价格15⑤左右(建议软件叫车)
+函公交车:景洪3路延长线转景洪6路A线，时长1小
+时。价格4 $\n
+is共享电动车:骑行20分钟，!! 带安全帽( 现在每辆
+车上都配有安全帽母)价格4\n
+宜拍摄服装:傣装泰和油纸伞乎，或者连衣裙旨，纯
+色和花色都好，西双版纳不怕色彩艳丽。
+少拍摄时间:西双版纳最热的时候是中午12点到下午3
+点，建议避开这个时间拍摄，以免晒伤。\n
+句拍照时段小tips:西双版纳现在晚.上7点左右落日
+，落日前的光线非常漂亮，拍完之后可以去马路斜
+对面的玛扎烧烤(非常正宗的傣味烧烤豳)，顺路撸
+个正宗的本地人烤串，完美结束。\n
+●旅行实用小建议:\n
+!!现在来西双版纳旅行需准备好云南健康码和行程
+码，方便进入各大酒店还有景区。\n
+!西双版纳还处于雨季糖，需要备雨伞乎，即使不下
+雨防晒也是有必要的。\n
+!!下雨之后蚊虫比较多水，如果在树林区域拍摄- -定
+记得喷防蚊液，尤其是晚上五点钟以后。\n"/>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
